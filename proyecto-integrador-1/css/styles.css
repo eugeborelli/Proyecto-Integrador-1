@@ -1,0 +1,170 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+*  cuyos valores asigna por defecto el navegador. 
+*/
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Para que el scrolleo en la one page sea suave */
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "lato" , sans-serif; 
+    font-size: 18px ;
+    line-height: 1.2;
+    background-color: #fbfbfb;
+    color: #0f0f0f;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a#hola{ 
+    background: #af599e;
+    color: #fbfbfb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    font-size: 48px;
+    }
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    height: 90px;
+    width: 100%;
+    background-color: #fbfbfb;
+    position: fixed;
+   
+   box-shadow: 0 3px 10px -5px #5f5f5f;
+}
+
+.logo {
+    width: 120px;
+}
+
+ul#menu {
+    display: flex;
+    font-size: 20px;
+}
+
+li.menu-item a {
+    padding: 16px;
+    display: inline-block ;
+}
+
+li.menu-item:hover {
+    background: rgba(175, 89, 158, 0.3);
+    transition: background-color 0.3s;
+}
+
+
+/* MAIN */
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-around;
+    min-height: 100vh;
+    padding-top: 90px;
+}
+
+img.foto-de-perfil {
+    border-radius: 50%;
+    height: 300px;
+ }
+
+article {
+    width: 50%;
+}
+
+section#contacto {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    }
+
+article#hablemos {
+    background-color: rgba(175, 89, 158, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    
+    
+   } 
+
+   ul#contact-links {
+    display: inline-flex;
+    margin: auto;
+    
+    align-items: center;
+    padding: 10px;
+    padding-top: 1px;
+
+ }
+    
+.contact-img {
+   display: center;
+   height: 50px;
+   margin: 25px;
+}
+
+li.contact-item:hover {
+    background: rgba(175, 89, 158, 0.3);
+    transition: background-color 0.3s;
+}   
+
+
+
+/* FOOTER */
+footer{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbfbfb;
+    height: 90px;
+    width: 100%;
+    background-color: #af599e;
+    
+}
+
